@@ -20,7 +20,7 @@ int main() {
     printf("enter your height: ");
     scanf("%f", &height) ;   
 
-    BMI = weight/sqrt(height);
+    BMI = weight/pow(height,2);
     
     if (BMI < 18.5){
         printf("Underweight");
@@ -28,7 +28,7 @@ int main() {
         printf("Normal weight");
     }else if (BMI >= 25 && BMI<30){
         printf("Over weight");
-    }else{
+    }else if (BMI >= 30){
         printf("obese");
     }
 
