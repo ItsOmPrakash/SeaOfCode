@@ -6,6 +6,19 @@
 #include <stdio.h>
 
 int main() {
-    
+    int value;
+    printf("enter a positive integer: ");
+    scanf("%d", &value);
+
+    int reminder;
+    while (value>0){
+        
+        reminder = (value%10);
+        printf(" %d", reminder);
+        value= value/10;
+
+    }
+
     return 0;
 }
+
