@@ -5,14 +5,13 @@
 #include <stdio.h>
 
 int main() {
-
     int num;
+
     do {
-        printf("enter the number : ");
-        scanf("%d", &num);
+    printf("Enter a positive number: ");
+    scanf("%d", &num);
+  } while (num <= 0);
 
-    }while(num < 0);
 
-    
     return 0;
 }
